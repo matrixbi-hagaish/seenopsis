@@ -1,6 +1,9 @@
+
 ## **SEENOPSIS**
-by Meytal Avgil Tsadok
+By Meytal Avgil Tsadok  
 meytala@gmail.com
+Contributed (alot): Leah London Arazi  
+
 
 All code in this project is released under the AGPLv3 license unless a different license for a particular library is specified in the applicable library path.
 Copyright © Meytal Avgil Tsadok. All rights reserved.
@@ -29,16 +32,13 @@ The following are required:
 ## **USE CASE**
 seenopsis is intendent to be used by anyone who wants to have a first exploration of dataset&#39;s variables.
 
-In version 1.0.1, seenopsis users will choose one of the following options, based on the formatting of the dataset:
+## **Prerequisites**
+- Do not work with Hebrew paths.
+- If you work with Anaconda3, the script will run via Spyder.
+- To run the script in CMD:
+  1. Install Python 3 (https://www.python.org/downloads/)
+  2. Install packages in requirements.txt
 
-**seenopsis.process_pandas_df()** - for datasets that are in a _pandas_ data structures (python)
-After importing seenopsis, simply run this command, passing the name of the dataset.
-After executing the seenopsis.process_pandas_df() command , a new html tab with the dataset&#39;s seenopsis will be opened in your default internet browser.
-
-**seenopsis.process_csv()**- for datasets that are saved as a csv file **:**
-If your dataset is not in a pandas dataframe (for example you are using R or SQL environments), simply convert it to a csv file and use seenopsis.process_csv(). seenopsis version 1.0.1 can read csv files that were encoded using utf-8, ANSI, ISO-8859-1 and ISO-8859-8.
-
-After importing seenopsis and executing the seenopsis.process_csv() command, a new dialog window will be open and the user will have to point the path for the dataset saved as csv. Once the user choose the file and click open, a new tab with the dataset&#39;s seenopsis will be opened in the default internet browser.
 
 ## **Requirements and Dependencies**
 
@@ -54,6 +54,7 @@ In order to execute seenopsis the following libraries are needed:
 Additionally, you should have an internet browser installed on your computer (for example chrome or explorer). seenopsis will be better presented in chrome.
 
 A file named bootstrap.min.css (can be found in [https://github.com/meytala/seenopsis](https://github.com/meytala/seenopsis)) should also be copied to the working directory.
+
 
 ## **Additional Information**
 
@@ -100,13 +101,8 @@ Follow the header, you will see the seenopsis information structured in a rollin
 
 
 **EXAMPLES:**
-
-For a dataset formed in a pandas dataframe:
-
-    import seenopsis
-    seenopsis.process_pandas_df(name_of_dataset)
-
-For a dataset formed as a csv:
-
-    import seenopsis
-    seenopsis.process_csv()
+1. Run via CMD:
+    cd <the code directory>
+    python main.py
+2. Run via Spyder:
+    run the main.py file.
